@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    HEllo
+    <button class="bounce-me">Button
+      <svg
+      class="arrow"
+      width="20"
+      height="17"
+      viewBox="0 0 20 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M11.0929 0.292893C10.7024 0.683417 10.7024 1.31658 11.0929 1.70711L17.5858 8.2L11.0929 14.6929C10.7024 15.0834 10.7024 15.7166 11.0929 16.1071C11.4834 16.4976 12.1166 16.4976 12.5071 16.1071L19.7071 8.90711C20.0976 8.51658 20.0976 7.88342 19.7071 7.49289L12.5071 0.292893C12.1166 -0.0976311 11.4834 -0.0976311 11.0929 0.292893Z"
+        fill="currentColor"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M20 8.2C20 7.64771 19.5523 7.2 19 7.2H1C0.447716 7.2 0 7.64771 0 8.2C0 8.75228 0.447716 9.2 1 9.2H19C19.5523 9.2 20 8.75228 20 8.2Z"
+        fill="currentColor"
+      />
+    </svg>
+      </button>
+    <style>
+      .bounce-me:hover > .arrow {
+        animation: mymove;
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1.48);
+        animation-duration: 0.65s;
+      }
+      @keyframes mymove {
+       0% {
+        transform: translateX(0);
+       }
+       50% {
+        transform: translateX(8px);
+       }
+       100% {
+        transform: translateX(10px);
+       }
+
+      }
+
+    </style>
+  </body>
+</html>
